@@ -336,213 +336,75 @@
 
 
 /* FOR THE RESPONSIVENESS */
-
-
-
- /* TABLT SCREENS 
-@media (max-width: 1024px) {
-
-  .nav-center {
-    font-size: 0.75em;
-    gap: 12px;
-  }
-
-  .nav-list {
-    gap: 1.5em;
-    padding: 1em;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .Product-design,
-  .Product-Design-curriculum,
-  .Tuition-sec {
-    margin-left: 1.5em;
-    max-width: 90%;
-  }
-
-  .curriculum-contents {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .curriculum-list {
-    columns: 1;
-    width: 100%;
-  }
-
-  .curriculum-image {
-    padding-right: 0;
-    align-self: center;
-  }
-
-  .footer-container {
-    padding: 40px;
-    gap: 30px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
+/* --- Global Responsive Image Rule (Essential) --- */
+/* Ensures images do not overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
+/* --- Breakpoint: Small Screens (max-width: 600px) --- */
+@media (max-width: 600px) {
 
- /* MOBILE SCREENS 
-@media (max-width: 768px) {
-
-  /* NAV BAR 
-  .nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 15px;
+  /* General Padding Adjustment for Mobile View */
+  .page-content, .sub-nav {
+    padding: 0 15px;
   }
-
-  .nav-left,
-  .nav-center,
-  .nav-right {
-    flex: none;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .nav-center {
-    font-size: 0.8em;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  /* SUB NAV 
-  .sub-nav {
-    margin-top: 4em;
-  }
-
+  
+  /* Sub-Navigation: Stack list items vertically */
   .nav-list {
-    flex-direction: column;
+    flex-direction: column; /* Changes from horizontal to vertical */
     gap: 1em;
+    padding: 1em;
+  }
+
+  .nav-list li {
+    display: block; /* Ensures each item takes full width */
     width: 100%;
-    text-align: center;
+    box-sizing: border-box; /* Includes padding in the width calculation */
   }
 
-  /* PAGE CONTENT 
-  .page-content {
-    padding: 1.5em;
-    margin: 1.5em 1em;
-  }
-
-  .Product-design,
-  .Product-Design-curriculum,
-  .Tuition-sec {
+  /* Product Design Section: Stack text and image vertically */
+  .Product-design {
+    flex-direction: column; /* Changes from horizontal to vertical */
     margin-left: 0;
     max-width: 100%;
   }
 
-  .Product-design p {
-    font-size: 0.95rem;
-  }
-
+  /* Curriculum Section: Stack list and image vertically */
   .curriculum-contents {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; 
+    align-items: flex-start;
   }
 
+  /* Adjusts padding/margins for mobile view */
+  .curriculum-image {
+    padding-right: 0;
+    margin-top: 1em;
+  }
+  
   .curriculum-list {
-    columns: 1;
+    columns: 1; /* Makes the list a single column on mobile */
     padding-left: 0;
   }
 
-  .curriculum-image img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  /* FOOTER 
-  .footer-container {
-    flex-direction: column;
-    padding: 40px 20px;
-    align-items: flex-start;
-  }
-
-  .footer-main-content {
-    align-items: flex-start;
-  }
-
-  .footer-socials-column ul {
-    justify-content: flex-start;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+  /* Ensures sections below the curriculum don't have excessive left padding on mobile */
+  .Tuition-sec, .Product-Design-curriculum {
+    margin-left: 0;
   }
 }
 
-
-/* FOR SMALL MOBILE 
-@media (max-width: 480px) {
-
-  .nav-left {
-    font-size: 0.9em;
-  }
-
-  .nav-reg,
-  .nav-reg2 {
-    padding: 6px 12px;
-    font-size: 0.8em;
-  }
-
-  .page-content {
-    padding: 1.2em;
-  }
-
-  .page-content h4 {
-    font-size: 1rem;
-  }
-
-  .Tuition-sec h5 {
-    font-size: 0.9rem;
-  }
-
-  .Tuition-sec p {
-    font-size: 0.85rem;
-  }
-}*/
-
-
-/* =========================
-   MOBILE SUB-NAV (EXACT STACK STYLE)
-   ========================= */
-
-@media (max-width: 768px) {
-
-  .sub-nav {
-    margin-top: 2em;
-    padding: 0 1em;
-  }
-
-  .nav-list {
-    flex-direction: column;        /* STACK ITEMS */
-    gap: 12px;
-    padding: 1em;
-    width: 100%;
-    border-radius: 14px;
-  }
-
-  .nav-list li {
-    width: 100%;                   /* FULL WIDTH */
-    text-align: center;
-    padding: 14px 10px;
-    font-size: 0.95rem;
-    background: #fff;
-    border-radius: 10px;
-    border: 1px solid #f4a261;
-  }
-
-  .nav-list li:hover {
-    background: #f4a261;
-    color: #222;
-  }
+/* --- Breakpoint: Medium Screens (min-width: 601px) --- */
+/* This restores the horizontal layout for tablets/desktops */
+@media (min-width: 601px) {
+    .nav-list {
+      flex-direction: row; 
+      flex-wrap: wrap; 
+    }
+    
+    .nav-list li {
+      flex: 1; 
+      width: auto; 
+      text-align: center;
+    }
 }
