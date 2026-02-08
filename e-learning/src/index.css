@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    background: #21633E;
+    width: 100%;
+    min-height: 3.5em;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+
+}
+
+.nav-left {
+  flex: 1;
+  font-size: 1em;
+  font-weight: bold;
+  flex-wrap: nowrap;
+}
+
+.nav-center {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+  font-size: 0.7em;
+  flex-wrap: nowrap;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+.nav-reg {
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-reg2 {
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+.nav-reg:hover, 
+.nav-reg2:hover{
+ background: #FF7B00;
+}
+
+.sub-nav{
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  margin-top: 6em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  flex-wrap: wrap;
+}
+
+.sub-nav li {
+  list-style: none;
+  text-decoration: none;
+  color: #222;
+}
+
+.sub-nav .nav-item {
+  text-decoration: none;
+  color: #222; 
+}
+
+
+
+.nav-list {
+  display: flex;
+  gap: 3em;
+  border: 1px solid #f4a261;
+  border-radius: 12px;
+  padding: 1.5em;
+}
+
+.nav-list li{
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0.5em;
+  transition: 0.7s;
+}
+
+.nav-list li:hover{
+  background: #f4a261;
+
+}
+
+.Product-design{
+  max-width: 50%;
+  margin-left: 3em;
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  color: #666;
+}
+
+.Product-design .pd{
+  font-weight: bold;
+}
+
+.Product-Design-curriculum{
+   margin-left: 3em;
+   margin-top: 2em;
+   flex-wrap: wrap;
+}
+
+.Product-Design-curriculum .pdc{
+  margin-top: 1em;
+}
+
+.curriculum-contents{
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.curriculum-list{
+  padding-left: 1em;
+  flex: 1;
+  columns: 2;
+}
+
+.curriculum-list li{
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.curriculum-image{
+  border-radius: 50%;
+  padding: 10px;
+  padding-right: 4em;
+}
+
+.Tuition-sec{
+  padding-left: 3em;
+  font-family: Arial, sans-serif;
+  font-size: small;
+  margin-top: 4em;
+  color: #555;
+}
+
+.Tuition-sec h5{ margin: 1em;}
+.Tuition-sec p{margin: 1em;}
+.Tuition-sec span{font-weight: bold;}
+
+
+.footer-container{
+  background-color: #eafff3;
+  color: #555;
+  font-family: sans-serif;
+  padding: 60px 80px 30px;
+  grid-template-columns: repeat(4,1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  grid-column: 1 /-1;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.learnx-logo {
+  width: 35px;
+  height: auto;
+  
+}
+.logo-wrapper h3 {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.footer-container .learnx-sec{
+  max-width: 380px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.footer-main-content{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+
+}
+
+.footer-container  h3{
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #e78224;
+}
+
+.footer-container p,.footer-container li{
+   font-size: 0.9rem;
+   color: #666;
+   list-style: none;
+   line-height: 1.5;
+   margin: 0;
+   padding: 0;
+}
+
+.footer-container ul li {
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-bottom: 10px;
+}
+
+.footer-container ul li:hover {
+    color: #4CAF50; 
+    text-decoration: underline;
+}
+
+.footer-socials-column ul {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials-column a {
+  background: #fff;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer-container hr {
+  grid-column: 1 /-1;
+  margin: 40px 0 20px;
+  border: none;
+  height: 1px;
+  background: #555;
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* THIS CSS IS FOR THE PAGE CONTENT */
+
+.page-content {
+  max-width: 1000px;            
+  margin: 2em auto;            
+  padding: 2em;                  
+  background-color: #fff;       
+  border-radius: 12px;           
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  opacity: 0;                    
+  transform: translateY(20px);   
+  transition: all 0.6s ease;   
+}
+
+
+.page-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.page-content h4, .page-content h5 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #111827;
+}
+
+.page-content p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.page-content ul {
+  padding-left: 1.2em;
+  margin-bottom: 1em;
+}
+
+.page-content ul li {
+  margin-bottom: 0.5em;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+.page-content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1em 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* FOR THE RESPONSIVENESS */
+
+
+
+ /* TABLT SCREENS */
+@media (max-width: 1024px) {
+
+  .nav-center {
+    font-size: 0.75em;
+    gap: 12px;
+  }
+
+  .nav-list {
+    gap: 1.5em;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Product-design,
+  .Product-Design-curriculum,
+  .Tuition-sec {
+    margin-left: 1.5em;
+    max-width: 90%;
+  }
+
+  .curriculum-contents {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .curriculum-list {
+    columns: 1;
+    width: 100%;
+  }
+
+  .curriculum-image {
+    padding-right: 0;
+    align-self: center;
+  }
+
+  .footer-container {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+
+ /* MOBILE SCREENS */
+@media (max-width: 768px) {
+
+  /* NAV BAR */
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    flex: none;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-center {
+    font-size: 0.8em;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  /* SUB NAV */
+  .sub-nav {
+    margin-top: 4em;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* PAGE CONTENT */
+  .page-content {
+    padding: 1.5em;
+    margin: 1.5em 1em;
+  }
+
+  .Product-design,
+  .Product-Design-curriculum,
+  .Tuition-sec {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .Product-design p {
+    font-size: 0.95rem;
+  }
+
+  .curriculum-contents {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .curriculum-list {
+    columns: 1;
+    padding-left: 0;
+  }
+
+  .curriculum-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: flex-start;
+  }
+
+  .footer-main-content {
+    align-items: flex-start;
+  }
+
+  .footer-socials-column ul {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+
+/* FOR SMALL MOBILE */
+@media (max-width: 480px) {
+
+  .nav-left {
+    font-size: 0.9em;
+  }
+
+  .nav-reg,
+  .nav-reg2 {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+
+  .page-content {
+    padding: 1.2em;
+  }
+
+  .page-content h4 {
+    font-size: 1rem;
+  }
+
+  .Tuition-sec h5 {
+    font-size: 0.9rem;
+  }
+
+  .Tuition-sec p {
+    font-size: 0.85rem;
+  }
+}
